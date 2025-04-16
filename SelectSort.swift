@@ -33,7 +33,7 @@ func selectSort(_ arrayInt: [Int]) -> [Int] {
         var indexMin = pass
 
         // Iterate through the unsorted part of the array to find the min
-        for counter in (pass + 1)..<arraySize {
+        for counter in pass + 1..<arraySize {
 
             // if the current number is less than the current minimum
             if (arrayInt[counter] < arrayInt[indexMin]) {
@@ -43,7 +43,7 @@ func selectSort(_ arrayInt: [Int]) -> [Int] {
         }
 
         // If the min is not already in correct position
-        if (indexMin != pass) {
+        if indexMin != pass {
 
             // swap the min with the current number
             let temp = arrayInt[indexMin]
@@ -58,10 +58,10 @@ func selectSort(_ arrayInt: [Int]) -> [Int] {
 
 // Greeting and instructions
 print("Welcome to the select sort program!")
-print("This program gets a set of integers");
-print("from 'input.txt'.");
-print("It then sorts the integers using selection sort.");
-print("The sorted set will be written to 'output.txt'.");
+print("This program gets a set of integers")
+print("from 'input.txt'.")
+print("It then sorts the integers using selection sort.")
+print("The sorted set will be written to 'output.txt'.")
 
 // initialize output string
 var outputStr = ""
