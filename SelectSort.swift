@@ -36,7 +36,7 @@ func selectSort(_ arrayInt: [Int]) -> [Int] {
         for counter in pass + 1..<arraySize {
 
             // if the current number is less than the current minimum
-            if (arrayInt[counter] < arrayInt[indexMin]) {
+            if arrayInt[counter] < arrayInt[indexMin] {
                 // Set the min's index equal to the counter
                 indexMin = counter
             }
